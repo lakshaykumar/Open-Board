@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.todo {
+  /* display: none; */
+  display: none;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  height: 50vh;
+  width: 50vw;
+  background-color: #eef1ff;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.todo > * {
+  height: 70%;
+  width: 100%;
+}
+.todo > .header_cont {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f1f2f6;
+}
+p {
+  overflow-y: scroll;
+  width: 75%;
+  /* background-color: #949398ff; */
+  /* margin-left: 3.5rem; */
+  text-align: center;
+}
+h3 {
+  background-color: #101820ff;
+  color: #9ed9ccff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-weight: 800;
+  height: 35px;
+}
+.top {
+  background-color: #444;
+  color: aliceblue;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  width: 200px;
+}
+.talk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a120b;
+  /* color: #e5e5cb; */
+  width: 25vw;
+  margin: 1rem auto;
+  padding: 0.13rem;
+  font-weight: 200;
+  height: 5vh;
+}
+.talk > * {
+  width: 100%;
+}
+.desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 25%;
+  height: 70%;
+  margin-right: 10px;
+  background-color: #b2c8df;
+}
+.st {
+  background-color: #9b0000;
+  width: 15%;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-left: 0.3rem;
+}
+.main {
+  border-radius: 0.5rem;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 80%;
+}
+.task,
+.finish {
+  background-color: #89abe3ff;
+  border-radius: 0.5rem;
+  width: 48%;
+  overflow: scroll;
+  height: 85%;
+}
+.finish {
+  background-color: #faebefff;
+}
+.task > div:not([class]),
+.finish div {
+  background-color: #fcf6f5ff;
+  color: #5b0e2d;
+  margin: 0.5rem 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  height: 65px;
+}
+.cross .finish div {
+  color: #f49f1c;
+  background-color: #030e4f;
+}
+.main button {
+  align-items: center;
+  height: 25px;
+  margin: auto;
+}

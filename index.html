@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>OpenBoard</title>
+    <link href="main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="todo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="options">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="tool_bar scale_tools">
+      <img src="NewIcons/pointer2.svg" class="pointer" />
+      <img src="NewIcons/Black_Pencil.svg" class="pencil" />
+      <img src="NewIcons/Eraser.svg" class="eraser" />
+      <img src="NewIcons/Download.svg" class="Download" />
+      <img src="NewIcons/Photo.svg" class="photo" />
+      <img src="NewIcons/StickyNote.svg" class="StickyNote" />
+      <img src="NewIcons/Todoicon.png" class="todoIcon" />
+      <img src="NewIcons/Undo.svg" class="undo" />
+      <img src="NewIcons/Redo.svg" class="redo" />
+    </div>
+    <div class="pencil_tool">
+      <div class="head">
+        <div class="close">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="pencil_width">
+        <input type="range" min="1" max="10" value="1" />
+      </div>
+      <div class="pencil_color">
+        <div class="black color"></div>
+        <div class="red color"></div>
+        <div class="blue color"></div>
+      </div>
+    </div>
+    <div class="eraser_tool">
+      <div class="head">
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="eraser_width">
+        <input type="range" min="1" max="20" value="5" />
+      </div>
+    </div>
+    <div class="todo">
+      <div class="header_cont">
+        <div class="remove"></div>
+      </div>
+      <div class="talk">
+        <span class="desc">Add Task</span>
+        <input
+          type="text"
+          placeholder="What's in your mind"
+          class="todo_input"
+        />
+        <button class="st">Go</button>
+      </div>
+      <div class="main">
+        <div class="task">
+          <h3>Tasks</h3>
+        </div>
+        <div class="finish">
+          <h3>Finish</h3>
+        </div>
+      </div>
+    </div>
+    <canvas></canvas>
+    <script src="logic.js"></script>
+    <script src="todo.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>
